@@ -1,4 +1,4 @@
-const baseUrl = 'https://nexnotesapp.herokuapp.com/';
+const baseUrl = 'https://notexchange.shop/';
 
 export async function createChatRoom(receiver, message) {
     return (await fetch(`${baseUrl}/messages/createChatRoom`, {
