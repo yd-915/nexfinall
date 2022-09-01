@@ -47,6 +47,18 @@ const io = require("socket.io")(http, {
  
  });
 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('/client/build'));
+    
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, '/client/build/index.html'));
+    });
+} else {
+    app.get("/*", (req, res) => {
+        res.send("DB is running")
+    })
+}
+
 
 app.use(routes);
 app.listen(PORT, () => console.log(`Server is active at https://nexnotesapp.herokuapp.com/${PORT}...`));
