@@ -49,15 +49,19 @@ const ChatRoom = require('./server/models/ChatRoom')
 
 });
 
-app.use(express.static(path.join(__dirname, "client", "build")))
-router.get('/*', (req, res) => {
-    res.send('Server Running')
-})
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('/client/build'));
+    
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, '/client/build/index.html'));
+    });
+} else {
+    app.get("/*", (req, res) => {
+        res.send("DB is running")
+    })
+}
 
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-});
 
 app.use(routes);
-app.listen(PORT,() => console.log(`Server is active at https://nexnotes.shop/${PORT}...`));
+app.listen(PORT, () => console.log(`Server is active at https://notexchange.shop/${PORT}...`));
 // app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
