@@ -1,0 +1,11 @@
+#simpleSider {
+    background-image: url(https://imgs.search.brave.com/UfzLa2UwqzGGGpNJdW_x6q-X0-sGfuhH7qjOpNN9M3o/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9tZWRp/YS5ibG9ndG8uY29t/L2FydGljbGVzLzIw/MTcyMTAtdW5pdmVy/c2l0eS10b3JvbnRv/LmpwZz93PTIwNDgm/Y21kPXJlc2l6ZV90/aGVuX2Nyb3AmaGVp/Z2h0PTEzNjUmcXVh/bGl0eT03MA);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 135px;
+    margin-bottom: 2%;
+    text-align: center;
+    padding-top: 30px;
+    font-family: serif;
+}

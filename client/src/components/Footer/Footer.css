@@ -1,0 +1,44 @@
+footer {
+    padding: 1rem;
+    background-color: #46D2FF ;
+    text-align: center;
+    color: white;
+    margin-top: 3%;
+}
+
+footer a {
+    color: #000000c2;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.connections {
+    padding: 20px;
+}
+
+.connections svg {
+    /* font-size: 30pt; */
+    margin: 7px;
+}
+
+.connections a {
+    color: #4068FC;
+}
+
+.connections a:hover {
+    color: #001B7E
+}
+
+#instaIcon {
+    font-size: 35pt;
+}
+
+#fbIcon {
+    font-size: 30pt;
+}
+
+#linkedIcon {
+    font-size: 34pt;
+}
