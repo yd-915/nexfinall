@@ -61,5 +61,5 @@ if (process.env.NODE_ENV === 'production') {
 
 
 app.use(routes);
-app.listen(PORT, () => console.log(`Server is active at https://nexnotesapp.herokuapp.com/${PORT}...`));
+app.listen(PORT, () => console.log(`Server is active at https://notexchange.shop/${PORT}...`));
 // app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
