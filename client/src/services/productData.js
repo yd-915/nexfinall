@@ -1,4 +1,4 @@
-const baseUrl = 'https://nexnotesapp.herokuapp.com/';
+const baseUrl = 'https://notexchange.shop/';
 
 export async function getAll(page, category, query) {
     if (query !== "" && query !== undefined) {
