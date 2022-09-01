@@ -5,7 +5,7 @@ const config = {
     PORT: process.env.PORT || 5000,
     //DB_CONNECTION: `mongodb://localhost/${TABLE_NAME}`,
     MONGODB_URI: 'mongodb+srv://dy707:Draze999@cluster0.ruqu4pf.mongodb.net/?retryWrites=true&w=majority',
-    SECRET: 'badumts',
+    SECRET: 'truemuts',
     SALT: 10,
     COOKIE_NAME: 'USER_SESSION',
     CLOUDINARY_NAME: 'dulmusxxc',
