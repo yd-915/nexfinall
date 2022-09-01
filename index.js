@@ -13,7 +13,7 @@ app.use(auth())
 
 const io = require("socket.io")(http, {
    cors: {
-       origin: ["https://nexnotes.shop/"],
+       origin: ["*"],
       credentials: true
    }
 });
